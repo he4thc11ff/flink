@@ -49,8 +49,8 @@ public class Application2 {
             @Override
             public String select(Map<String, List<Event>> map) throws Exception {
                 StringBuilder sb = new StringBuilder();
-                Event start1 = map.get("start").get(0);
-                Event end1 = map.get("end").get(0);
+                Event start1 = map.get("begin").get(0);
+                Event end1 = map.get("final").get(0);
                 sb.append(start1.getId()).append("-").append(start1.getName()).append(" -> ")
                         .append(end1.getId()).append("-").append(end1.getName());
                 return sb.toString();
